@@ -10,4 +10,5 @@
     - name: Create local user
       win_user:
         name: jtespecial
-        state: absent
+        state: present # absent to remove a local user
+        password: tHisS1%S4PWD!
