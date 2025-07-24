@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: win
   remote_user: administrator
   vars:
     become_method: runas
