@@ -1,5 +1,5 @@
 # ansible-for-windows-server
-The purpose of this repo is to help provide example Ansible playbooks/roles managing Windows Server for administrators/engineers.
+The purpose of this repo is to help provide example Ansible playbooks/roles managing Windows Server for administrators/engineers. Be sure to also check out the examples [devops-school](https://gist.github.com/devops-school/52c8de8924555f91c50e3a016556060f) has published.
 
 # Examples
 - Server type:
@@ -9,10 +9,10 @@ The purpose of this repo is to help provide example Ansible playbooks/roles mana
 
 # Notes:
 - You may need the following modules:
-  - ansible.windows
-  - ansible.posix
-  - community.general
-  - community.windows
+  - [ansible.windows](https://docs.ansible.com/ansible/latest/collections/ansible/windows/)
+  - [ansible.posix](https://docs.ansible.com/ansible/latest/collections/ansible/posix/)
+  - [community.general](https://docs.ansible.com/ansible/latest/collections/community/general/)
+  - [community.windows](https://docs.ansible.com/ansible/latest/collections/community/windows/)
 - Modules can be downloaded in the following fashion: `ansible-galaxy collection install COLLECTION.NAME`
 
 # Resources
