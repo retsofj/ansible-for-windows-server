@@ -1,0 +1,13 @@
+---
+- hosts: all
+  remote_user: administrator
+  vars:
+    become_method: runas
+    ansible_shell_type: powershell
+    shell_type: powershell
+
+  tasks:
+    - name: Create local user
+      win_user:
+        name: jtespecial
+        state: absent

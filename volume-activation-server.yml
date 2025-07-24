@@ -1,0 +1,24 @@
+---
+- hosts: all
+  remote_user: administrator
+  vars:
+    become_method: runas
+    ansible_shell_type: powershell
+    shell_type: powershell
+
+  tasks:
+    - name: Install Volume Activation role
+      ansible.windows.win_feature:
+        name: VolumeActivation
+        state: present
+        include_management_tools: true
+      register: win_feature
+
+    - name: Reboot if required
+      ansible.windows.win_reboot:
+      when: win_feature.reboot_required
+
+    - name: Configure Windows firewall
+      ansible.windows.win_powershell:
+        script: |
+          Set-NetFirewallRule -Name SPPSVC-In-TCP -Profile Domain,Private -Enabled True
