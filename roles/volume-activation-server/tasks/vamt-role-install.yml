@@ -1,0 +1,7 @@
+---
+- name: Install Volume Activation role
+  ansible.windows.win_feature:
+    name: VolumeActivation
+    state: present
+    include_management_tools: true
+  register: win_feature

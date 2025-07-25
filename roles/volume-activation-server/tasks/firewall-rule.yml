@@ -1,0 +1,5 @@
+---
+- name: Configure Windows firewall
+  ansible.windows.win_powershell:
+    script: |
+      Set-NetFirewallRule -Name SPPSVC-In-TCP -Profile Domain,Private -Enabled True

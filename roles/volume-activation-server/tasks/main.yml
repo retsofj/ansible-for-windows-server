@@ -1,0 +1,11 @@
+---
+- hosts: win
+  remote_user: administrator
+  vars:
+    become_method: runas
+    ansible_shell_type: powershell
+    shell_type: powershell
+  roles:
+    - vamt-role-install
+    - reboot
+    - firewall-rule

@@ -1,0 +1,4 @@
+---
+- name: Reboot if required
+  ansible.windows.win_reboot:
+  when: win_feature.reboot_required
