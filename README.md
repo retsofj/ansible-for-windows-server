@@ -2,8 +2,8 @@
 The purpose of this repo is to help provide example Ansible playbooks/roles managing Windows Server for administrators/engineers. Be sure to also check out the examples [devops-school](https://gist.github.com/devops-school/52c8de8924555f91c50e3a016556060f) has published.
 
 # Examples
-- Server type:
-  - Volume Activation server
+- Server types:
+  - [Volume Activation server](https://github.com/retsofj/ansible-for-windows-server/tree/main/roles/volume-activation-server)
 - Common task:
   - Create local user
 
