@@ -5,4 +5,4 @@ This role is based off of [Microsoft's documentation](https://learn.microsoft.co
 
 You will still need to run the wizard to configure the host, as well as any further steps in the Microsoft documentation.
 
-I have also included a playbook that does all of the same steps if you are more comfortable with that process
+I have also included a [playbook](https://github.com/retsofj/ansible-for-windows-server/blob/main/volume-activation-server/playbook.yml) that does all of the same steps if you are more comfortable with that process

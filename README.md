@@ -3,7 +3,7 @@ The purpose of this repo is to help provide example Ansible playbooks/roles mana
 
 # Examples
 - Server types:
-  - [Volume Activation server](https://github.com/retsofj/ansible-for-windows-server/tree/main/roles/volume-activation-server)
+  - [Volume Activation server](https://github.com/retsofj/ansible-for-windows-server/tree/main/volume-activation-server)
 - Common task:
   - Create local user
 
